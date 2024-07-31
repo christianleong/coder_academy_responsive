@@ -1,0 +1,26 @@
+.living-room-image {
+  /* min-width: 300px;
+  width: 50%;
+  max-width: 400px; */
+
+  /* width: min(300px, 50%);
+  max-width: 400px; */
+
+  /* min-width: 300px;
+  width: min(40%, 400px) */
+
+  width: clamp(300px, 50%, 400px);
+}
+
+.parent {
+  height: 100px;
+  width: 90%;
+  border: 1px solid red;
+  padding: 10px;
+}
+  
+.child {
+  height: 20px;
+  border: 1px solid red;
+  width: 50%;
+}
